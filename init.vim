@@ -44,6 +44,8 @@ Plug 'Mofiqul/dracula.nvim' " Dracula theme
 
 call plug#end()
 
+
+
 """" Theme Setting """"
 
 "let g:termguicolors = true
@@ -55,11 +57,9 @@ colorscheme dracula
 let g:airline_theme='simple'
 let g:airline_powerline_fonts = 1
 
-
 " Transparent background
 highlight Normal guibg=none
 highlight NonText guibg=none
-
 
 """ End Theme Setting """"
 
@@ -76,6 +76,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 """" End NerdTree Settings """"
 
 
+
 """" Telescope Settings """"
 
 " Keybindings
@@ -86,6 +87,7 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 """" End Telesope Settings """"
+
 
 
 """" CoC Settings """"
@@ -154,34 +156,38 @@ endfunction
 
 
 
-"""" Airline Setting """"
+"""" Airline Settings """"
 
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#buffer_nr_show = 1
 
 """" End Airline Setting """"
 
-""" Buffer """"
+
+
+""" Buffer Movement Settings """"
+
 " Move between buffers
 nnoremap <silent> <c-n> :bnext<CR>
 nnoremap <silent> <c-p> :bprev<CR>
 
-"""" Buffer """"
+"""" End Buffer Movement Settings """"
 
 
-""" Navigate Windows """"
+
+""" Navigate Windows Settings """"
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-""" Navigate Windows """"
+""" End Navigate Windows Settings """"
 
 
-"""" Vim-Go """"
+
+"""" Vim-Go Settings """"
 
 "let g:go_highlight_types = 0
 
-
-""""
+"""" End Vim-Go Settings """"
